@@ -1,0 +1,11 @@
+vlogan -kdb -sverilog -full64 pkg.sv                                                          
+vlogan -kdb -sverilog -full64 DW_pricod.v
+vlogan -kdb -sverilog -full64 rise.sv
+vlogan -kdb -sverilog -full64 box_master.sv                                                   
+vlogan -kdb -sverilog -full64 special_memory.sv                                 
+vlogan -kdb -sverilog -full64 special_memory_testbench.sv
+//vcs -kdb -debug_access+all -full64 pkg.sv                                                            
+//vcs -kdb -debug_access+all -full64 DW_pricod.v                                                        
+//vcs -kdb -debug_access+all -full64 special_memory.sv                                      
+vcs -kdb -debug_access+all -full64 special_memory_testbench    
+./simv -gui

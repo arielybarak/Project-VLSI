@@ -1,0 +1,14 @@
+verilog -full64 pkg.sv
+vlogan -kdb -sverilog -full64 axi_if.sv
+vlogan -kdb -sverilog -full64 DW_pricod.v
+vlogan -kdb -sverilog -full64 rise.sv
+vlogan -kdb -sverilog -full64 process_mem.sv
+vlogan -kdb -sverilog -full64 rout.sv
+vlogan -kdb -sverilog -full64 box_master.sv
+vlogan -kdb -sverilog -full64 special_memory.sv
+vlogan -kdb -sverilog -full64 WriteOrderTop.sv
+vlogan -kdb -sverilog -full64 top_testbench.sv
+
+vcs -kdb -debug_access+all -full64 top_testbench
+./simv -gui
+
